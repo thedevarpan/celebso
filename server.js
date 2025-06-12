@@ -4,7 +4,7 @@ const path = require("path");
 const session = require("express-session")
 const passport = require("passport");
 
-/* Coonfigure dotenv*/
+/* Configure dotenv*/
 require("dotenv").config();
 
 /* Require routers */
@@ -37,6 +37,15 @@ app.use(passport.session());
 /* Home page */
 app.use("/", indexRroutes);
 
-app.listen(3000, () => {
-    console.log("Server is running on port 3000");
-})
+// Use environment variable for port with fallback
+const PORT = process.env.PORT || 3000;
+
+// For local development
+if (process.env.NODE_ENV !== 'production') {
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
+}
+
+// Export for Vercel serverless function
+module.exports = app;
