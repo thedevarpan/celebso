@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= metaTitle || 'Default Title' %></title>
+    <meta name="description" content="<%= metaDescription || 'Default description' %>">
+    <meta name="keywords" content="<%= metaKeywords || 'Node.js, Web Development' %>">
+    <!-- OG tags for social sharing -->
+    <meta property="og:title" content="<%= metaTitle %>">
+    <meta property="og:description" content="<%= metaDescription %>">
+    <meta property="og:image" content="<%= ogImage %>">
+    <meta property="og:url" content="<%= pageUrl %>">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= metaTitle %>">
+    <meta name="twitter:description" content="<%= metaDescription %>">
+    <meta name="twitter:image" content="<%= ogImage %>">
+
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Celebso",
+      "url": "https://flowmazon.com",
+      "logo": "https://home.celebso.com//assets/images/logo.png",
+      "sameAs": [
+        "https://www.instagram.com/yourprofile",
+        "https://www.linkedin.com/company/yourcompany"
+      ]
+    }
+    </script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <img src="/assets/images/logo.png" alt="Logo">
+            </div>
+        </div>
+        <nav class="nav">
+            <ul class="nav-list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="login.html" class="login-btn"><i class="fas fa-sign-in-alt"></i>Login</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <i class="fas fa-moon"></i>
+        </div>
+    </header>

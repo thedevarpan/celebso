@@ -1,0 +1,344 @@
+.login-btn {
+            background: linear-gradient(45deg, var(--primary-btn), #fcd142);
+            color: #fff;
+            padding: 0.5rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            margin-left: 1rem;
+        }
+
+        .login-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(244, 190, 19, 0.3);
+        }
+
+        .login-btn i {
+            margin-right: 0.5rem;
+        }
+
+        /* Dark mode specific styles */
+        [data-theme="dark"] {
+            --primary-color: #1a1a1a;
+            --secondary-color: #ffffff;
+            --hover-color: #2d2d2d;
+            --dropdown-bg: #2d2d2d;
+            --text-color: #ffffff;
+            --header-bg: #1a1a1a;
+            --header-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+            --gradient-start: #ff6b6b;
+            --gradient-end: #4ecdc4;
+        }
+
+        [data-theme="dark"] body {
+            background-color: var(--primary-color);
+        }
+
+        [data-theme="dark"] .main-content {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .social-media {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .founders-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .businessroom-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .co-founders-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .acquire-startup-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .community-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .about-section {
+            background: var(--primary-color);
+        }
+
+        [data-theme="dark"] .profile-card-main,
+        [data-theme="dark"] .social-card,
+        [data-theme="dark"] .founders-right-chat-simulation,
+        [data-theme="dark"] .businessroom-left-card,
+        [data-theme="dark"] .co-founders-right-card,
+        [data-theme="dark"] .acquire-startup-left-card,
+        [data-theme="dark"] .community-right-card {
+            background: var(--hover-color);
+            box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .social-icon-container {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .social-icon-container i {
+            color: var(--primary-btn);
+        }
+
+        [data-theme="dark"] .chat-body {
+            background: var(--hover-color);
+        }
+
+        [data-theme="dark"] .message.incoming p {
+            background: var(--dropdown-bg);
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .message.outgoing .message-text {
+            background: var(--primary-btn);
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .list-item-icon-container {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .list-item-icon-container i {
+            color: var(--primary-btn);
+        }
+
+        [data-theme="dark"] .team-member {
+            background: var(--hover-color);
+        }
+
+        [data-theme="dark"] .team-member h4,
+        [data-theme="dark"] .team-member p {
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .about-stats {
+            background: var(--hover-color);
+        }
+
+        [data-theme="dark"] .stat-number {
+            color: var(--primary-btn);
+        }
+
+        [data-theme="dark"] .stat-label {
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] footer {
+            background: var(--header-bg);
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .chat-footer {
+            background: var(--hover-color);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        [data-theme="dark"] .chat-header {
+            background: var(--primary-btn);
+        }
+
+        [data-theme="dark"] .live-indicator {
+            color: #ff4444;
+        }
+
+        [data-theme="dark"] .profile-title-main {
+            color: var(--primary-btn);
+        }
+
+        [data-theme="dark"] .profile-quote-main {
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .section-subtitle {
+            color: var(--text-color);
+            opacity: 0.8;
+        }
+
+        [data-theme="dark"] .description {
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .secondary-btn {
+            background: var(--hover-color);
+            color: var(--text-color);
+        }
+
+        [data-theme="dark"] .secondary-btn:hover {
+            background: var(--dropdown-bg);
+        }
+
+        /* Smooth transition for theme switching */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .profile-card-main,
+        .social-card,
+        .founders-right-chat-simulation,
+        .businessroom-left-card,
+        .co-founders-right-card,
+        .acquire-startup-left-card,
+        .community-right-card,
+        .team-member,
+        .about-stats {
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Contact Section Styles */
+        .contact-section {
+            padding: 2rem 1rem;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--hover-color) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .contact-header .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(45deg, var(--primary-btn), #fcd142);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-header .section-subtitle {
+            font-size: 0.9rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 1.2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            flex: 1;
+            min-width: 200px;
+            max-width: 250px;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-color: var(--primary-btn);
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: var(--primary-btn);
+            margin-bottom: 0.6rem;
+        }
+
+        .contact-card h3 {
+            margin-bottom: 0.4rem;
+            color: var(--text-color);
+            font-size: 1.1rem;
+        }
+
+        .contact-card p {
+            color: var(--text-color);
+            opacity: 0.9;
+            margin: 0.2rem 0;
+            font-size: 0.85rem;
+            line-height: 1.3;
+        }
+
+        .social-media-row {
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-media-row h3 {
+            color: var(--text-color);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .social-link {
+            font-size: 1.4rem;
+            color: var(--text-color);
+            transition: all 0.3s ease;
+            width: 45px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .social-link:hover {
+            color: var(--primary-btn);
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive styles for contact section */
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 1.5rem 1rem;
+            }
+
+            .contact-info {
+                gap: 0.8rem;
+                flex-wrap: wrap;
+            }
+
+            .contact-card {
+                min-width: 150px;
+                padding: 1rem;
+            }
+
+            .social-media-row {
+                padding: 0.8rem;
+            }
+
+            .social-links {
+                gap: 1rem;
+            }
+
+            .social-link {
+                width: 40px;
+                height: 40px;
+                font-size: 1.2rem;
+            }
+        }
