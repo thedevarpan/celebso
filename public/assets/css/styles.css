@@ -3,6 +3,7 @@
     --secondary-color: #333333;
     --hover-color: #f0f0f0;
     --dropdown-bg: #ffffff;
+    --footer-bg-color: #1a1a36;
     --text-color: #333333;
     --header-bg: #ffffff;
     --header-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -1735,7 +1736,7 @@ body {
 
 /* Footer styles */
 footer {
-    background-color: #1a1a36;
+    background-color: var(--footer-bg-color);
     padding: 4rem 5%;
     color: #fff;
 }
@@ -2273,5 +2274,13 @@ footer {
     }
 }
 
+side-by-side-images img {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    padding-top: 20px;
+}
 
+.side-by-side-images img:hover {
+    transform: scale(1.03);
+}
 
